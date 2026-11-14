@@ -1,0 +1,1578 @@
+{
+  "site": {
+    "title": "Inikova — production designer",
+    "cover": "portfolio/title.jpg"
+  },
+  "table": [
+    {
+      "id": "carpet",
+      "poster": "portfolio/carpet/poster.jpg",
+      "title": "The Carpet",
+      "titleRu": "Ковер",
+      "kind": "animation-film",
+      "role": "production designer",
+      "pdf": "portfolio/carpet/carpet.pdf",
+      "videos": 2,
+      "assets": 165,
+      "folder": "portfolio/carpet"
+    },
+    {
+      "id": "garden-of-the-future",
+      "poster": "portfolio/garden-of-the-future/poster.jpg",
+      "title": "Garden of the Future",
+      "titleRu": "Сад будущего",
+      "kind": "animation-film",
+      "role": "production designer",
+      "pdf": "portfolio/garden-of-the-future/garden-of-the-future.pdf",
+      "videos": 0,
+      "assets": 14,
+      "folder": "portfolio/garden-of-the-future"
+    },
+    {
+      "id": "spark-of-life",
+      "poster": "portfolio/spark-of-life/poster.jpg",
+      "title": "Spark of Life",
+      "titleRu": "Искра жизни",
+      "kind": "costume-production",
+      "role": "production designer",
+      "pdf": "portfolio/spark-of-life/spark-of-life.pdf",
+      "videos": 0,
+      "assets": 6,
+      "folder": "portfolio/spark-of-life"
+    },
+    {
+      "id": "eden",
+      "poster": "portfolio/eden/poster.jpg",
+      "title": "Eden",
+      "titleRu": "Эдем",
+      "kind": "costume-production",
+      "role": "production designer",
+      "pdf": "portfolio/eden/eden.pdf",
+      "videos": 0,
+      "assets": 9,
+      "folder": "portfolio/eden"
+    },
+    {
+      "id": "reyneke-fox",
+      "poster": "portfolio/reyneke-fox/poster.jpg",
+      "title": "Reyneke the Fox",
+      "titleRu": "Рейнеке-лис",
+      "kind": "costume-production",
+      "role": "production designer",
+      "pdf": "portfolio/reyneke-fox/reyneke-fox.pdf",
+      "videos": 0,
+      "assets": 14,
+      "folder": "portfolio/reyneke-fox"
+    },
+    {
+      "id": "prince-aquamarine",
+      "poster": "portfolio/prince-aquamarine/sketches/poster.jpg",
+      "title": "Prince Aquamarine",
+      "titleRu": "Принц Аквамарин",
+      "kind": "costume-props",
+      "role": "production designer",
+      "pdf": "portfolio/prince-aquamarine/prince-aquamarine.pdf",
+      "videos": 0,
+      "assets": 21,
+      "folder": "portfolio/prince-aquamarine"
+    },
+    {
+      "id": "ladies-happiness",
+      "poster": "portfolio/ladies-happiness/poster.png",
+      "title": "Ladies' Happiness",
+      "titleRu": "Дамское счастье",
+      "kind": "costume-production",
+      "role": "production designer",
+      "pdf": "portfolio/ladies-happiness/ladies-happiness.pdf",
+      "videos": 0,
+      "assets": 7,
+      "folder": "portfolio/ladies-happiness"
+    },
+    {
+      "id": "birds",
+      "poster": "portfolio/birds/poster.jpg",
+      "title": "Birds",
+      "titleRu": "Птицы",
+      "kind": "costume-production",
+      "role": "production designer",
+      "pdf": "portfolio/birds/birds.pdf",
+      "videos": 0,
+      "assets": 11,
+      "folder": "portfolio/birds"
+    },
+    {
+      "id": "sketches",
+      "poster": "portfolio/sketches/scan-20250616-19.png",
+      "title": "Sketches",
+      "titleRu": "Наброски",
+      "kind": "sketchbook",
+      "role": "artist",
+      "pdf": null,
+      "videos": 0,
+      "assets": 21,
+      "folder": "portfolio/sketches"
+    }
+  ],
+  "projects": [
+    {
+      "id": "carpet",
+      "title": "The Carpet",
+      "titleRu": "Ковер",
+      "kind": "animation-film",
+      "role": "production designer",
+      "folder": "portfolio/carpet",
+      "poster": "portfolio/carpet/poster.jpg",
+      "pdf": "portfolio/carpet/carpet.pdf",
+      "videos": [
+        "portfolio/carpet/animatic-final.mp4",
+        "portfolio/carpet/teaser-02.mp4"
+      ],
+      "assets": [
+        {
+          "src": "portfolio/carpet/animatic-final.mp4",
+          "kind": "video",
+          "caption": "Animatic final"
+        },
+        {
+          "src": "portfolio/carpet/carpet.pdf",
+          "kind": "pdf",
+          "caption": "Carpet"
+        },
+        {
+          "src": "portfolio/carpet/characters/boy-01.jpg",
+          "kind": "character",
+          "caption": "Boy 01"
+        },
+        {
+          "src": "portfolio/carpet/characters/boy-02.jpg",
+          "kind": "character",
+          "caption": "Boy 02"
+        },
+        {
+          "src": "portfolio/carpet/characters/boy-03.jpg",
+          "kind": "character",
+          "caption": "Boy 03"
+        },
+        {
+          "src": "portfolio/carpet/characters/grandfather.jpg",
+          "kind": "character",
+          "caption": "Grandfather"
+        },
+        {
+          "src": "portfolio/carpet/characters/grandmother-02.jpg",
+          "kind": "character",
+          "caption": "Grandmother 02"
+        },
+        {
+          "src": "portfolio/carpet/characters/grandmother-closeup.jpg",
+          "kind": "character",
+          "caption": "Grandmother closeup"
+        },
+        {
+          "src": "portfolio/carpet/characters/grandmother.jpg",
+          "kind": "character",
+          "caption": "Grandmother"
+        },
+        {
+          "src": "portfolio/carpet/characters/lineup-01.jpg",
+          "kind": "character",
+          "caption": "Lineup 01"
+        },
+        {
+          "src": "portfolio/carpet/characters/lineup-02.jpg",
+          "kind": "character",
+          "caption": "Lineup 02"
+        },
+        {
+          "src": "portfolio/carpet/characters/neighbor.jpg",
+          "kind": "character",
+          "caption": "Neighbor"
+        },
+        {
+          "src": "portfolio/carpet/environment-neighbor-house-final.jpg",
+          "kind": "environment",
+          "caption": "Environment neighbor house final"
+        },
+        {
+          "src": "portfolio/carpet/environment-yard-day-final.jpg",
+          "kind": "environment",
+          "caption": "Environment yard day final"
+        },
+        {
+          "src": "portfolio/carpet/environment-yard-panorama-final.jpg",
+          "kind": "environment",
+          "caption": "Environment yard panorama final"
+        },
+        {
+          "src": "portfolio/carpet/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/carpet/still-16.jpg",
+          "kind": "still",
+          "caption": "Still 16"
+        },
+        {
+          "src": "portfolio/carpet/still-27.jpg",
+          "kind": "still",
+          "caption": "Still 27"
+        },
+        {
+          "src": "portfolio/carpet/still-35.jpg",
+          "kind": "still",
+          "caption": "Still 35"
+        },
+        {
+          "src": "portfolio/carpet/still-36.jpg",
+          "kind": "still",
+          "caption": "Still 36"
+        },
+        {
+          "src": "portfolio/carpet/still-38.jpg",
+          "kind": "still",
+          "caption": "Still 38"
+        },
+        {
+          "src": "portfolio/carpet/still-52.jpg",
+          "kind": "still",
+          "caption": "Still 52"
+        },
+        {
+          "src": "portfolio/carpet/still-56.jpg",
+          "kind": "still",
+          "caption": "Still 56"
+        },
+        {
+          "src": "portfolio/carpet/still-82.jpg",
+          "kind": "still",
+          "caption": "Still 82"
+        },
+        {
+          "src": "portfolio/carpet/still-pel.jpg",
+          "kind": "still",
+          "caption": "Still pel"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/001.jpg",
+          "kind": "storyboard",
+          "caption": "001"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/002.jpg",
+          "kind": "storyboard",
+          "caption": "002"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/003.jpg",
+          "kind": "storyboard",
+          "caption": "003"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/004.jpg",
+          "kind": "storyboard",
+          "caption": "004"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/005.jpg",
+          "kind": "storyboard",
+          "caption": "005"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/006.jpg",
+          "kind": "storyboard",
+          "caption": "006"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/007.jpg",
+          "kind": "storyboard",
+          "caption": "007"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/008.jpg",
+          "kind": "storyboard",
+          "caption": "008"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/009.jpg",
+          "kind": "storyboard",
+          "caption": "009"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/010.jpg",
+          "kind": "storyboard",
+          "caption": "010"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/011-alt.jpg",
+          "kind": "storyboard",
+          "caption": "011 alt"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/011.jpg",
+          "kind": "storyboard",
+          "caption": "011"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/012.jpg",
+          "kind": "storyboard",
+          "caption": "012"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/013.jpg",
+          "kind": "storyboard",
+          "caption": "013"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/014.jpg",
+          "kind": "storyboard",
+          "caption": "014"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/015.jpg",
+          "kind": "storyboard",
+          "caption": "015"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/016.jpg",
+          "kind": "storyboard",
+          "caption": "016"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/017.jpg",
+          "kind": "storyboard",
+          "caption": "017"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/018.jpg",
+          "kind": "storyboard",
+          "caption": "018"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/019.jpg",
+          "kind": "storyboard",
+          "caption": "019"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/020.jpg",
+          "kind": "storyboard",
+          "caption": "020"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/021.jpg",
+          "kind": "storyboard",
+          "caption": "021"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/022.jpg",
+          "kind": "storyboard",
+          "caption": "022"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/023.jpg",
+          "kind": "storyboard",
+          "caption": "023"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/024.jpg",
+          "kind": "storyboard",
+          "caption": "024"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/025.jpg",
+          "kind": "storyboard",
+          "caption": "025"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/026-5.jpg",
+          "kind": "storyboard",
+          "caption": "026 5"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/026.jpg",
+          "kind": "storyboard",
+          "caption": "026"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/027.jpg",
+          "kind": "storyboard",
+          "caption": "027"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/028.jpg",
+          "kind": "storyboard",
+          "caption": "028"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/029-5.jpg",
+          "kind": "storyboard",
+          "caption": "029 5"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/029.jpg",
+          "kind": "storyboard",
+          "caption": "029"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/030.jpg",
+          "kind": "storyboard",
+          "caption": "030"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/031.jpg",
+          "kind": "storyboard",
+          "caption": "031"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/032.jpg",
+          "kind": "storyboard",
+          "caption": "032"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/033.jpg",
+          "kind": "storyboard",
+          "caption": "033"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/034.jpg",
+          "kind": "storyboard",
+          "caption": "034"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/035.jpg",
+          "kind": "storyboard",
+          "caption": "035"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/036.jpg",
+          "kind": "storyboard",
+          "caption": "036"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/038.jpg",
+          "kind": "storyboard",
+          "caption": "038"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/039.jpg",
+          "kind": "storyboard",
+          "caption": "039"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/040.jpg",
+          "kind": "storyboard",
+          "caption": "040"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/041.jpg",
+          "kind": "storyboard",
+          "caption": "041"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/042.jpg",
+          "kind": "storyboard",
+          "caption": "042"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/043.jpg",
+          "kind": "storyboard",
+          "caption": "043"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/044.jpg",
+          "kind": "storyboard",
+          "caption": "044"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/045.jpg",
+          "kind": "storyboard",
+          "caption": "045"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/046.jpg",
+          "kind": "storyboard",
+          "caption": "046"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/047.jpg",
+          "kind": "storyboard",
+          "caption": "047"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/048.jpg",
+          "kind": "storyboard",
+          "caption": "048"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/049.jpg",
+          "kind": "storyboard",
+          "caption": "049"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/050.jpg",
+          "kind": "storyboard",
+          "caption": "050"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/051.jpg",
+          "kind": "storyboard",
+          "caption": "051"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/052.jpg",
+          "kind": "storyboard",
+          "caption": "052"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/053.jpg",
+          "kind": "storyboard",
+          "caption": "053"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/054.jpg",
+          "kind": "storyboard",
+          "caption": "054"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/055.jpg",
+          "kind": "storyboard",
+          "caption": "055"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/056.jpg",
+          "kind": "storyboard",
+          "caption": "056"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/057.jpg",
+          "kind": "storyboard",
+          "caption": "057"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/058.jpg",
+          "kind": "storyboard",
+          "caption": "058"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/059.jpg",
+          "kind": "storyboard",
+          "caption": "059"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/060.jpg",
+          "kind": "storyboard",
+          "caption": "060"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/061.jpg",
+          "kind": "storyboard",
+          "caption": "061"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/062.jpg",
+          "kind": "storyboard",
+          "caption": "062"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/063.jpg",
+          "kind": "storyboard",
+          "caption": "063"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/064.jpg",
+          "kind": "storyboard",
+          "caption": "064"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/065.jpg",
+          "kind": "storyboard",
+          "caption": "065"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/066.jpg",
+          "kind": "storyboard",
+          "caption": "066"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/067.jpg",
+          "kind": "storyboard",
+          "caption": "067"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/068.jpg",
+          "kind": "storyboard",
+          "caption": "068"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/069.jpg",
+          "kind": "storyboard",
+          "caption": "069"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/070.jpg",
+          "kind": "storyboard",
+          "caption": "070"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/071.jpg",
+          "kind": "storyboard",
+          "caption": "071"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/072.jpg",
+          "kind": "storyboard",
+          "caption": "072"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/073.jpg",
+          "kind": "storyboard",
+          "caption": "073"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/074.jpg",
+          "kind": "storyboard",
+          "caption": "074"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/077.jpg",
+          "kind": "storyboard",
+          "caption": "077"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/078.jpg",
+          "kind": "storyboard",
+          "caption": "078"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/079.jpg",
+          "kind": "storyboard",
+          "caption": "079"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/080.jpg",
+          "kind": "storyboard",
+          "caption": "080"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/081.jpg",
+          "kind": "storyboard",
+          "caption": "081"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/082.jpg",
+          "kind": "storyboard",
+          "caption": "082"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/083.jpg",
+          "kind": "storyboard",
+          "caption": "083"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/084.jpg",
+          "kind": "storyboard",
+          "caption": "084"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/086.jpg",
+          "kind": "storyboard",
+          "caption": "086"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/087.jpg",
+          "kind": "storyboard",
+          "caption": "087"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/088.jpg",
+          "kind": "storyboard",
+          "caption": "088"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/089.jpg",
+          "kind": "storyboard",
+          "caption": "089"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/090.jpg",
+          "kind": "storyboard",
+          "caption": "090"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/091.jpg",
+          "kind": "storyboard",
+          "caption": "091"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/092.jpg",
+          "kind": "storyboard",
+          "caption": "092"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/093.jpg",
+          "kind": "storyboard",
+          "caption": "093"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/094.jpg",
+          "kind": "storyboard",
+          "caption": "094"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/095.jpg",
+          "kind": "storyboard",
+          "caption": "095"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/096.jpg",
+          "kind": "storyboard",
+          "caption": "096"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/097.jpg",
+          "kind": "storyboard",
+          "caption": "097"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/098.jpg",
+          "kind": "storyboard",
+          "caption": "098"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/099.jpg",
+          "kind": "storyboard",
+          "caption": "099"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/100.jpg",
+          "kind": "storyboard",
+          "caption": "100"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/101.jpg",
+          "kind": "storyboard",
+          "caption": "101"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/102.jpg",
+          "kind": "storyboard",
+          "caption": "102"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/103.jpg",
+          "kind": "storyboard",
+          "caption": "103"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/104.jpg",
+          "kind": "storyboard",
+          "caption": "104"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/105.jpg",
+          "kind": "storyboard",
+          "caption": "105"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/106.jpg",
+          "kind": "storyboard",
+          "caption": "106"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/107.jpg",
+          "kind": "storyboard",
+          "caption": "107"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/108.jpg",
+          "kind": "storyboard",
+          "caption": "108"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/109.jpg",
+          "kind": "storyboard",
+          "caption": "109"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/110.jpg",
+          "kind": "storyboard",
+          "caption": "110"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/111.jpg",
+          "kind": "storyboard",
+          "caption": "111"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/112.jpg",
+          "kind": "storyboard",
+          "caption": "112"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/113.jpg",
+          "kind": "storyboard",
+          "caption": "113"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/114.jpg",
+          "kind": "storyboard",
+          "caption": "114"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/115.jpg",
+          "kind": "storyboard",
+          "caption": "115"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/116.jpg",
+          "kind": "storyboard",
+          "caption": "116"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/117.jpg",
+          "kind": "storyboard",
+          "caption": "117"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/118.jpg",
+          "kind": "storyboard",
+          "caption": "118"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/119.jpg",
+          "kind": "storyboard",
+          "caption": "119"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/120.jpg",
+          "kind": "storyboard",
+          "caption": "120"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/121.jpg",
+          "kind": "storyboard",
+          "caption": "121"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/122.jpg",
+          "kind": "storyboard",
+          "caption": "122"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/123.jpg",
+          "kind": "storyboard",
+          "caption": "123"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/124.jpg",
+          "kind": "storyboard",
+          "caption": "124"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/125.jpg",
+          "kind": "storyboard",
+          "caption": "125"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/126.jpg",
+          "kind": "storyboard",
+          "caption": "126"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/127.jpg",
+          "kind": "storyboard",
+          "caption": "127"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/128.jpg",
+          "kind": "storyboard",
+          "caption": "128"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/129.jpg",
+          "kind": "storyboard",
+          "caption": "129"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/130.jpg",
+          "kind": "storyboard",
+          "caption": "130"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/131.jpg",
+          "kind": "storyboard",
+          "caption": "131"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/132-5.jpg",
+          "kind": "storyboard",
+          "caption": "132 5"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/132.jpg",
+          "kind": "storyboard",
+          "caption": "132"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/133.jpg",
+          "kind": "storyboard",
+          "caption": "133"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/134.jpg",
+          "kind": "storyboard",
+          "caption": "134"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/135.jpg",
+          "kind": "storyboard",
+          "caption": "135"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/136.jpg",
+          "kind": "storyboard",
+          "caption": "136"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/137.jpg",
+          "kind": "storyboard",
+          "caption": "137"
+        },
+        {
+          "src": "portfolio/carpet/storyboard/138.jpg",
+          "kind": "storyboard",
+          "caption": "138"
+        },
+        {
+          "src": "portfolio/carpet/storyboard-overview.jpg",
+          "kind": "storyboard",
+          "caption": "Storyboard overview"
+        },
+        {
+          "src": "portfolio/carpet/teaser-02.mp4",
+          "kind": "video",
+          "caption": "Teaser 02"
+        }
+      ]
+    },
+    {
+      "id": "garden-of-the-future",
+      "title": "Garden of the Future",
+      "titleRu": "Сад будущего",
+      "kind": "animation-film",
+      "role": "production designer",
+      "folder": "portfolio/garden-of-the-future",
+      "poster": "portfolio/garden-of-the-future/poster.jpg",
+      "pdf": "portfolio/garden-of-the-future/garden-of-the-future.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/garden-of-the-future/ascent.jpg",
+          "kind": "image",
+          "caption": "Ascent"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/barn.jpg",
+          "kind": "image",
+          "caption": "Barn"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/clay-sketch.jpg",
+          "kind": "sketch",
+          "caption": "Clay sketch"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/concept-sky.jpg",
+          "kind": "image",
+          "caption": "Concept sky"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/ending.jpg",
+          "kind": "image",
+          "caption": "Ending"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/frame-04.jpg",
+          "kind": "film",
+          "caption": "Frame 04"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/frame-05.jpg",
+          "kind": "film",
+          "caption": "Frame 05"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/frame-09.jpg",
+          "kind": "film",
+          "caption": "Frame 09"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/garden-of-the-future.pdf",
+          "kind": "pdf",
+          "caption": "Garden of the future"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/onion.jpg",
+          "kind": "image",
+          "caption": "Onion"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/panorama-cyberpunk.jpg",
+          "kind": "image",
+          "caption": "Panorama cyberpunk"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/poster-drafts.jpg",
+          "kind": "poster",
+          "caption": "Poster drafts"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/garden-of-the-future/sun.jpg",
+          "kind": "image",
+          "caption": "Sun"
+        }
+      ]
+    },
+    {
+      "id": "spark-of-life",
+      "title": "Spark of Life",
+      "titleRu": "Искра жизни",
+      "kind": "costume-production",
+      "role": "production designer",
+      "folder": "portfolio/spark-of-life",
+      "poster": "portfolio/spark-of-life/poster.jpg",
+      "pdf": "portfolio/spark-of-life/spark-of-life.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/spark-of-life/final-01-print.jpg",
+          "kind": "image",
+          "caption": "Final 01 print"
+        },
+        {
+          "src": "portfolio/spark-of-life/final-02.jpg",
+          "kind": "image",
+          "caption": "Final 02"
+        },
+        {
+          "src": "portfolio/spark-of-life/final-03.jpg",
+          "kind": "image",
+          "caption": "Final 03"
+        },
+        {
+          "src": "portfolio/spark-of-life/final-04.jpg",
+          "kind": "image",
+          "caption": "Final 04"
+        },
+        {
+          "src": "portfolio/spark-of-life/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/spark-of-life/spark-of-life.pdf",
+          "kind": "pdf",
+          "caption": "Spark of life"
+        }
+      ]
+    },
+    {
+      "id": "eden",
+      "title": "Eden",
+      "titleRu": "Эдем",
+      "kind": "costume-production",
+      "role": "production designer",
+      "folder": "portfolio/eden",
+      "poster": "portfolio/eden/poster.jpg",
+      "pdf": "portfolio/eden/eden.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/eden/draft-sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 01"
+        },
+        {
+          "src": "portfolio/eden/eden.pdf",
+          "kind": "pdf",
+          "caption": "Eden"
+        },
+        {
+          "src": "portfolio/eden/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/eden/sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01"
+        },
+        {
+          "src": "portfolio/eden/sketch-03.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 03"
+        },
+        {
+          "src": "portfolio/eden/sketch-04.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 04"
+        },
+        {
+          "src": "portfolio/eden/sketch-05.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 05"
+        },
+        {
+          "src": "portfolio/eden/sketch-06.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 06"
+        },
+        {
+          "src": "portfolio/eden/sketch-08.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 08"
+        }
+      ]
+    },
+    {
+      "id": "reyneke-fox",
+      "title": "Reyneke the Fox",
+      "titleRu": "Рейнеке-лис",
+      "kind": "costume-production",
+      "role": "production designer",
+      "folder": "portfolio/reyneke-fox",
+      "poster": "portfolio/reyneke-fox/poster.jpg",
+      "pdf": "portfolio/reyneke-fox/reyneke-fox.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/reyneke-fox/draft-sketch-04-alt.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 04 alt"
+        },
+        {
+          "src": "portfolio/reyneke-fox/draft-sketch-04.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 04"
+        },
+        {
+          "src": "portfolio/reyneke-fox/draft-sketch-06.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 06"
+        },
+        {
+          "src": "portfolio/reyneke-fox/draft-sketch-07.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 07"
+        },
+        {
+          "src": "portfolio/reyneke-fox/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/reyneke-fox/reyneke-fox.pdf",
+          "kind": "pdf",
+          "caption": "Reyneke fox"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-01-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-02-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 02 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-03-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 03 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-04-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 04 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-05-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 05 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-06-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 06 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-07-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 07 final"
+        },
+        {
+          "src": "portfolio/reyneke-fox/sketch-08-final.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 08 final"
+        }
+      ]
+    },
+    {
+      "id": "prince-aquamarine",
+      "title": "Prince Aquamarine",
+      "titleRu": "Принц Аквамарин",
+      "kind": "costume-props",
+      "role": "production designer",
+      "folder": "portfolio/prince-aquamarine",
+      "poster": "portfolio/prince-aquamarine/sketches/poster.jpg",
+      "pdf": "portfolio/prince-aquamarine/prince-aquamarine.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/prince-aquamarine/casket-02.jpg",
+          "kind": "prop",
+          "caption": "Casket 02"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/casket-aquamarine.jpg",
+          "kind": "prop",
+          "caption": "Casket aquamarine"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/material-02.jpg",
+          "kind": "prop",
+          "caption": "Material 02"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/material-03.jpg",
+          "kind": "prop",
+          "caption": "Material 03"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/material-04.jpg",
+          "kind": "prop",
+          "caption": "Material 04"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/prince-aquamarine.pdf",
+          "kind": "pdf",
+          "caption": "Prince aquamarine"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/props-01.jpg",
+          "kind": "prop",
+          "caption": "Props 01"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/props-02.jpg",
+          "kind": "prop",
+          "caption": "Props 02"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-01-alt.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 01 alt"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 01"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-02-alt.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 02 alt"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-02.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 02"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-03-alt.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 03 alt"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/draft-sketch-03.jpg",
+          "kind": "sketch",
+          "caption": "Draft sketch 03"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/sketch-01-print.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01 print"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/sketch-02.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 02"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/sketches/sketch-03-print.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 03 print"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/staff-full.jpg",
+          "kind": "prop",
+          "caption": "Staff full"
+        },
+        {
+          "src": "portfolio/prince-aquamarine/staff.jpg",
+          "kind": "prop",
+          "caption": "Staff"
+        }
+      ]
+    },
+    {
+      "id": "ladies-happiness",
+      "title": "Ladies' Happiness",
+      "titleRu": "Дамское счастье",
+      "kind": "costume-production",
+      "role": "production designer",
+      "folder": "portfolio/ladies-happiness",
+      "poster": "portfolio/ladies-happiness/poster.png",
+      "pdf": "portfolio/ladies-happiness/ladies-happiness.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/ladies-happiness/ladies-happiness.pdf",
+          "kind": "pdf",
+          "caption": "Ladies happiness"
+        },
+        {
+          "src": "portfolio/ladies-happiness/poster.png",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/ladies-happiness/sketch-02.png",
+          "kind": "sketch",
+          "caption": "Sketch 02"
+        },
+        {
+          "src": "portfolio/ladies-happiness/sketch-03.png",
+          "kind": "sketch",
+          "caption": "Sketch 03"
+        },
+        {
+          "src": "portfolio/ladies-happiness/sketch-05.png",
+          "kind": "sketch",
+          "caption": "Sketch 05"
+        },
+        {
+          "src": "portfolio/ladies-happiness/sketch-06.png",
+          "kind": "sketch",
+          "caption": "Sketch 06"
+        },
+        {
+          "src": "portfolio/ladies-happiness/sketch-07.png",
+          "kind": "sketch",
+          "caption": "Sketch 07"
+        }
+      ]
+    },
+    {
+      "id": "birds",
+      "title": "Birds",
+      "titleRu": "Птицы",
+      "kind": "costume-production",
+      "role": "production designer",
+      "folder": "portfolio/birds",
+      "poster": "portfolio/birds/poster.jpg",
+      "pdf": "portfolio/birds/birds.pdf",
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/birds/birds.pdf",
+          "kind": "pdf",
+          "caption": "Birds"
+        },
+        {
+          "src": "portfolio/birds/poster.jpg",
+          "kind": "poster",
+          "caption": "Poster"
+        },
+        {
+          "src": "portfolio/birds/sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01"
+        },
+        {
+          "src": "portfolio/birds/sketch-02.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 02"
+        },
+        {
+          "src": "portfolio/birds/sketch-03.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 03"
+        },
+        {
+          "src": "portfolio/birds/sketch-04.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 04"
+        },
+        {
+          "src": "portfolio/birds/sketch-05.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 05"
+        },
+        {
+          "src": "portfolio/birds/sketch-06.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 06"
+        },
+        {
+          "src": "portfolio/birds/sketch-09.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 09"
+        },
+        {
+          "src": "portfolio/birds/sketch-10.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 10"
+        },
+        {
+          "src": "portfolio/birds/sketch-11.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 11"
+        }
+      ]
+    },
+    {
+      "id": "sketches",
+      "title": "Sketches",
+      "titleRu": "Наброски",
+      "kind": "sketchbook",
+      "role": "artist",
+      "folder": "portfolio/sketches",
+      "poster": "portfolio/sketches/scan-20250616-19.png",
+      "pdf": null,
+      "videos": [],
+      "assets": [
+        {
+          "src": "portfolio/sketches/scan-20250616-19.png",
+          "kind": "sketch",
+          "caption": "Scan 20250616 19"
+        },
+        {
+          "src": "portfolio/sketches/scan-20250616-2.png",
+          "kind": "sketch",
+          "caption": "Scan 20250616 2"
+        },
+        {
+          "src": "portfolio/sketches/scan-20250616-5.png",
+          "kind": "sketch",
+          "caption": "Scan 20250616 5"
+        },
+        {
+          "src": "portfolio/sketches/scan-20250616-7.png",
+          "kind": "sketch",
+          "caption": "Scan 20250616 7"
+        },
+        {
+          "src": "portfolio/sketches/scan-20250616-8.png",
+          "kind": "sketch",
+          "caption": "Scan 20250616 8"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-13.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 13"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-18.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 18"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-2.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 2"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-21.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 21"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-22.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 22"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-31.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 31"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-32.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 32"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-361.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 361"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-37.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 37"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-7.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 7"
+        },
+        {
+          "src": "portfolio/sketches/scan-20261020-8.png",
+          "kind": "sketch",
+          "caption": "Scan 20261020 8"
+        },
+        {
+          "src": "portfolio/sketches/sketch-01.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 01"
+        },
+        {
+          "src": "portfolio/sketches/sketch-02.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 02"
+        },
+        {
+          "src": "portfolio/sketches/sketch-03.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 03"
+        },
+        {
+          "src": "portfolio/sketches/sketch-04.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 04"
+        },
+        {
+          "src": "portfolio/sketches/sketch-05.jpg",
+          "kind": "sketch",
+          "caption": "Sketch 05"
+        }
+      ]
+    }
+  ]
+}
