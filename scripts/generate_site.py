@@ -47,7 +47,7 @@ CUSTOM_ROWS = {
         ["1.jpg"],
         ["2.jpg"],
         ["3.jpg"],
-        ["4_1.jpg", "4_2.jpg"],
+        {"main": ["4_1.jpg", "4_2.jpg"], "fit": True},
         ["5.jpg"],
         {"main": ["6_1.jpg", "6_2.jpg", "6_3.jpg"], "fit": True},
     ],
