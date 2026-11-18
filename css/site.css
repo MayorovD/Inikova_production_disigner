@@ -210,10 +210,9 @@ table.credits th {
   display: none;
 }
 
-.row:has(.col[data-side="l"]) .col,
-.row:has(.col[data-side="l"]) .main-zone {
-  flex: 1 1 0%;
-  width: 50%;
+.row:has(.col[data-side="l"]) .col {
+  flex: 0 0 auto;
+  width: min(40vw, 420px);
 }
 
 .row:has(.col[data-side="l"]) .main-zone {
