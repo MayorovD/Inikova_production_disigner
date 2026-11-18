@@ -53,7 +53,6 @@ def header(active: str, prefix: str) -> str:
       <nav>
         {link("index.html", "Проекты", "work")}
         {link("about.html", "Обо мне", "about")}
-        {link("contact.html", "Контакты", "contact")}
       </nav>
     </header>"""
 
@@ -62,7 +61,7 @@ def footer(prefix: str) -> str:
     return f"""<footer class="site">
     <div class="wrap">
       <span>© Полина Иникова, 2026. Все права защищены.</span>
-      <a href="{prefix}contact.html">hello@inikova.works</a>
+      <a href="mailto:hello@inikova.works">hello@inikova.works</a>
     </div>
   </footer>
   <script src="{prefix}js/site.js"></script>"""
@@ -154,27 +153,15 @@ def write_about() -> None:
         <p>В 2022 году получила среднее специальное образование в колледже ВГИК. Сейчас завершаю обучение в университете ВГИК по специальности «художник анимации и компьютерной графики».</p>
         <p>В работе использую Photoshop, Toon Boom и Blender.</p>
         <p>Открыта к интересным проектам.</p>
+        <div class="about-contact">
+          <h2>Контакты</h2>
+          <p><a href="mailto:hello@inikova.works">hello@inikova.works</a></p>
+          <p>Телеграм: <a href="https://t.me/inikova" rel="noopener">@inikova</a></p>
+        </div>
       </div>
     </div>"""
     (OUT / "about.html").write_text(
         page("Обо мне — Иникова Полина", body, "about", ""),
-        encoding="utf-8",
-    )
-
-
-def write_contact() -> None:
-    body = """<section>
-      <h1 class="page-title">Контакты</h1>
-      <p class="lede">Для сотрудничества, преподавания и вопросов по производственному дизайну.</p>
-      <table class="credits">
-        <tr><th>Почта</th><td>hello@inikova.works</td></tr>
-        <tr><th>Телеграм</th><td>@inikova</td></tr>
-        <tr><th>Город</th><td>Москва, возможны выезды</td></tr>
-      </table>
-      <p class="bodycopy">Пишите кратко о проекте, сроках и о том, нужны ли вам костюмы, пространства, предметы или весь визуальный мир. Материалы на сайте являются авторскими и не могут быть скопированы без разрешения.</p>
-    </section>"""
-    (OUT / "contact.html").write_text(
-        page("Контакты — Иникова Полина", body, "contact", ""),
         encoding="utf-8",
     )
 
@@ -272,10 +259,9 @@ def main() -> None:
     PROJECTS_DIR.mkdir(exist_ok=True)
     write_index()
     write_about()
-    write_contact()
     for rel in MANIFEST:
         write_project(rel)
-    print(f"wrote index, about, contact, and {len(MANIFEST)} project pages")
+    print(f"wrote index, about, and {len(MANIFEST)} project pages")
 
 
 if __name__ == "__main__":
