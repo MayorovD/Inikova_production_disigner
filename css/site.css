@@ -232,7 +232,7 @@ table.credits th {
 .row img {
   width: 100%;
   object-fit: cover;
-  background: #e4d8c8;
+  background: var(--paper);
 }
 
 .row .main-zone img {
