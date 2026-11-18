@@ -47,7 +47,7 @@ CUSTOM_ROWS = {
         ["1.jpg"],
         ["2.jpg"],
         ["3.jpg"],
-        ["4_1.jpg", "4_2.jpg"],
+        {"main": ["4_1.jpg", "4_2.jpg"], "fit": "hw"},
         ["5.jpg"],
         ["6_1.jpg", "6_2.jpg", "6_3.jpg"],
     ],
@@ -249,7 +249,8 @@ def gallery_html(rel: dict, slug: str) -> str:
                 main = entry.get("main", [])
                 left = col_html(entry.get("l", []), "l")
                 right = col_html(entry.get("r", []), "r")
-                mz = "".join(f'<div class="main-zone">{img_cell(n)}</div>' for n in main)
+                fit = f' data-fit="{entry["fit"]}"' if entry.get("fit") else ""
+                mz = "".join(f'<div class="main-zone"{fit}>{img_cell(n)}</div>' for n in main)
                 parts = [left, mz, right]
                 inner = "".join(p for p in parts if p)
                 return f'<div class="row">{inner}</div>'

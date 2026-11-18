@@ -259,6 +259,16 @@ table.credits th {
   object-fit: contain;
 }
 
+.main-zone[data-fit="hw"] .cell {
+  flex: 1 1 0;
+}
+
+.main-zone[data-fit="hw"] img {
+  max-height: none;
+  height: 44vh;
+  object-fit: cover;
+}
+
 .row .col img {
   max-height: 34vh;
   aspect-ratio: auto;
