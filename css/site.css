@@ -259,13 +259,19 @@ table.credits th {
   object-fit: contain;
 }
 
+.main-zone[data-fit="hw"] {
+  justify-content: center;
+}
+
 .main-zone[data-fit="hw"] .cell {
-  flex: 1 1 0;
+  flex: 0 0 auto;
 }
 
 .main-zone[data-fit="hw"] img {
   max-height: none;
   height: 44vh;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
