@@ -294,6 +294,7 @@ table.credits th {
   margin: 0 0 14px;
   font-size: 16px;
   line-height: 1.55;
+  text-align: justify;
 }
 
 .about-contact {
