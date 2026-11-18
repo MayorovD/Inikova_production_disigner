@@ -148,6 +148,7 @@ nav a[aria-current="page"] {
   margin: 0 0 28px;
   font-size: 17px;
   line-height: 1.55;
+  text-align: justify;
 }
 
 table.credits {
