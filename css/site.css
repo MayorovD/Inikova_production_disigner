@@ -58,6 +58,7 @@ header.site {
   letter-spacing: 0.04em;
   line-height: 1.05;
   color: var(--brand-color);
+  text-transform: uppercase;
 }
 
 .brand small {
