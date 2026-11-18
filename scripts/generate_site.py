@@ -201,7 +201,7 @@ def write_about() -> None:
           <h2>Контакты</h2>
           <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
           <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
-          <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">паблик</a></p>
+          <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">«Иней на поляне»</a></p>
         </div>
       </div>
     </div>"""
