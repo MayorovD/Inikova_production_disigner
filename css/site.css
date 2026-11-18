@@ -238,6 +238,13 @@ table.credits th {
   max-height: 72vh;
 }
 
+.row.contain-row .main-zone img {
+  height: 62vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .row .col img {
   max-height: 34vh;
   aspect-ratio: auto;
