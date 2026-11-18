@@ -26,6 +26,25 @@ TAG_MAP = {
     "The-Birds": ("birds", "Птицы", "414 до н. э.", "Костюмы, спектакль", "Афиняне с птицами основывают между небом и землёй Тучекукушкин град."),
 }
 
+# explicit row layout per slug: each entry is a list of filenames for that row.
+# Rows render as full-width .main-zone (no automatic r/l columns).
+CUSTOM_ROWS = {
+    "carpet": [
+        ["1.jpg"],
+        ["2.jpg"],
+        ["3.jpg"],
+        ["3_r1.jpg", "3_r2.jpg"],
+        ["4_2.jpg"],
+        ["5_r1.jpg"],
+        ["5.jpg"],
+        ["6.jpg"],
+        # "VIDEO"  <- placeholder for pilot (video not added yet)
+        ["7_1.jpg", "7_2.jpg"],
+        ["8_1.jpg", "8_2.jpg"],
+        ["9_1.jpg", "9_2.jpg"],
+    ],
+}
+
 
 def esc(text) -> str:
     return (
@@ -175,7 +194,7 @@ def write_project(rel: dict) -> None:
     def rel_img(src: str) -> str:
         return rel_from("projects", src)
 
-    gallery = gallery_html(rel)
+    gallery = gallery_html(rel, slug)
 
     body = f"""<a class="back" href="../index.html">← Назад к проектам</a>
     <h1 class="page-title">{esc(title)}</h1>
@@ -188,8 +207,25 @@ def write_project(rel: dict) -> None:
     )
 
 
-def gallery_html(rel: dict) -> str:
+def gallery_html(rel: dict, slug: str) -> str:
     tag = rel["tag"]
+
+    def existing(argv):
+        return f'../portfolio/{tag}/{argv}'
+
+    # explicit per-project layout
+    if slug in CUSTOM_ROWS:
+        rows_html = "\n".join(
+            f'<div class="row">'
+            + "".join(
+                f'<div class="main-zone"><a class="cell"><img src="{existing(n)}" alt="{esc(n)}"></a></div>'
+                for n in row
+            )
+            + f'</div>'
+            for row in CUSTOM_ROWS[slug]
+        )
+        return f'<div class="rows">\n{rows_html}\n      </div>'
+
     # parse assets by row number
     import re
     row_re = re.compile(r"^(\d+)(?:_(\d+))?(?:_([rl])(\d+))?$")
