@@ -142,10 +142,10 @@ def poster_for(release: dict) -> str:
 def ordered():  # curated display order
     order = [
         "The-Birds",
+        "Carpet",
         "Reineke-Fuchs",
         "The-Ladies-Delight",
         "Eden",
-        "Carpet",
         "The-Garden-of-the-Future",
         "Le-Prince-des-Aigues-Marines",
         "Spark-of-Life",
