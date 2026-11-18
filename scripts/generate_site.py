@@ -223,14 +223,15 @@ def gallery_html(rel: dict, slug: str) -> str:
 
     # explicit per-project layout
     if slug in CUSTOM_ROWS:
-        def render_row(row):
-            multi = " contain-row" if len(row) > 1 else ""
-            cells = "".join(
+        rows_html = "\n".join(
+            f'<div class="row">'
+            + "".join(
                 f'<div class="main-zone"><a class="cell"><img src="{existing(n)}" alt="{esc(n)}"></a></div>'
                 for n in row
             )
-            return f'<div class="row"{multi}>{cells}</div>'
-        rows_html = "\n".join(render_row(row) for row in CUSTOM_ROWS[slug])
+            + f'</div>'
+            for row in CUSTOM_ROWS[slug]
+        )
         return f'<div class="rows">\n{rows_html}\n      </div>'
 
     # parse assets by row number
