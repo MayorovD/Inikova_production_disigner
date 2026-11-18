@@ -126,8 +126,6 @@ def project_rows() -> str:
       <img src="{poster}" alt="{esc(title)}">
       <div class="work-caption">
         <span class="work-title">{esc(title)}</span>
-        <span class="work-meta">{esc(year)} · {esc(field)}</span>
-        <p class="work-summary">{esc(summary)}</p>
       </div>
     </a>""")
     return "\n".join(out)

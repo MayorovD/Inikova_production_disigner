@@ -131,22 +131,6 @@ nav a[aria-current="page"] {
   line-height: 1.2;
 }
 
-.work-meta {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.work-summary {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.5;
-}
-
 .work-item:hover .work-title {
   color: var(--accent);
 }
