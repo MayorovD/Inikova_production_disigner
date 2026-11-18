@@ -54,8 +54,10 @@ CUSTOM_ROWS = {
     "ladies-happiness": [
         ["1_1.jpg"],
         ["1_2.jpg"],
-        ["2_1.jpg", "2_2.jpg"],
-        ["3_1.jpg", "3_2.jpg"],
+        ["2_1.jpg"],
+        ["2_2.jpg"],
+        ["3_1.jpg"],
+        ["3_2.jpg"],
     ],
     "prince-aquamarine": [
         {"main": ["1.jpg"], "r": ["1_r1.jpg", "1_r2.jpg"]},
