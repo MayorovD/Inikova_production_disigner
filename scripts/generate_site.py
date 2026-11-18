@@ -57,6 +57,13 @@ CUSTOM_ROWS = {
         ["2_1.jpg", "2_2.jpg"],
         ["3_1.jpg", "3_2.jpg"],
     ],
+    "prince-aquamarine": [
+        {"main": ["1.jpg"], "r": ["1_r1.jpg", "1_r2.jpg"]},
+        ["2_1.jpg", "2_2.jpg"],
+        ["3.jpg"],
+        ["4_1.jpg", "4_2.jpg"],
+        {"main": ["5.jpg"], "l": ["5_l1.jpg", "5_l2.jpg"]},
+    ],
 }
 
 
@@ -229,15 +236,29 @@ def gallery_html(rel: dict, slug: str) -> str:
 
     # explicit per-project layout
     if slug in CUSTOM_ROWS:
-        rows_html = "\n".join(
-            f'<div class="row">'
-            + "".join(
-                f'<div class="main-zone"><a class="cell"><img src="{existing(n)}" alt="{esc(n)}"></a></div>'
-                for n in row
-            )
-            + f'</div>'
-            for row in CUSTOM_ROWS[slug]
-        )
+        def img_cell(n):
+            return f'<a class="cell"><img src="{existing(n)}" alt="{esc(n)}"></a>'
+
+        def col_html(names, side):
+            if not names:
+                return ""
+            cells = "".join(img_cell(n) for n in names)
+            return f'<div class="col" data-side="{side}">{cells}</div>'
+
+        def render_row(entry):
+            if isinstance(entry, dict):
+                main = entry.get("main", [])
+                left = col_html(entry.get("l", []), "l")
+                right = col_html(entry.get("r", []), "r")
+                mz = "".join(f'<div class="main-zone">{img_cell(n)}</div>' for n in main)
+                parts = [left, mz, right]
+                inner = "".join(p for p in parts if p)
+                return f'<div class="row">{inner}</div>'
+            # list: all in main-zone
+            mz = "".join(f'<div class="main-zone">{img_cell(n)}</div>' for n in entry)
+            return f'<div class="row">{mz}</div>'
+
+        rows_html = "\n".join(render_row(entry) for entry in CUSTOM_ROWS[slug])
         return f'<div class="rows">\n{rows_html}\n      </div>'
 
     # parse assets by row number
