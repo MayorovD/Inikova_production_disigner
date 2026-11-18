@@ -294,6 +294,27 @@ table.credits th {
   line-height: 1.55;
 }
 
+.about-contact {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.about-contact h2 {
+  font-family: Georgia, "Palatino Linotype", serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.about-contact p {
+  margin: 6px 0;
+}
+
+.about-contact a {
+  border-bottom: 1px solid var(--line);
+}
+
 footer.site {
   border-top: 1px solid var(--line);
   padding: 22px 0 40px;
