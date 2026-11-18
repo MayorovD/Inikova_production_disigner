@@ -264,24 +264,34 @@ table.credits th {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
   gap: 48px;
   padding: 36px 0 56px;
+  align-items: start;
 }
 
-.about-grid h1 {
+.about-photo {
+  width: 100%;
+}
+
+.about-photo img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  background: #e4d8c8;
+}
+
+.about-text h1 {
   font-family: Georgia, "Palatino Linotype", serif;
   font-weight: normal;
   font-size: 36px;
   margin: 0 0 16px;
 }
 
-.contact-block p {
-  margin: 6px 0;
-}
-
-.contact-block a {
-  border-bottom: 1px solid var(--line);
+.about-text p {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 footer.site {
