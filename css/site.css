@@ -237,6 +237,8 @@ table.credits th {
 
 .row .main-zone img {
   max-height: 72vh;
+  height: auto;
+  object-fit: contain;
 }
 
 .row .col img {
