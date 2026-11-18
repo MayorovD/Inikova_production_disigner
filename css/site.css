@@ -145,6 +145,8 @@ nav a[aria-current="page"] {
 .lede {
   color: var(--muted);
   margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.55;
 }
 
 table.credits {

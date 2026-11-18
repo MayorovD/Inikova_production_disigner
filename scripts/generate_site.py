@@ -177,17 +177,9 @@ def write_project(rel: dict) -> None:
 
     gallery = gallery_html(rel)
 
-    credits = (
-        f'<tr><th>Название</th><td>{esc(rel["title"])}</td></tr>'
-        f'<tr><th>Год</th><td>{esc(year)}</td></tr>'
-        f'<tr><th>Область работы</th><td>{esc(field)}</td></tr>'
-        f'<tr><th>Описание</th><td>{esc(rel["description"])}</td></tr>'
-    )
-
     body = f"""<a class="back" href="../index.html">← Назад к проектам</a>
     <h1 class="page-title">{esc(title)}</h1>
-    <p class="lede">{esc(summary)}</p>
-    <table class="credits">{credits}</table>
+    <p class="lede">{esc(rel["description"])}</p>
     {gallery}"""
     path = PROJECTS_DIR / f"{slug}.html"
     path.write_text(
