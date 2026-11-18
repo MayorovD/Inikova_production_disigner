@@ -174,6 +174,10 @@ def write_index() -> None:
     body = f"""<section class="projects">
       <h1 class="page-title">Проекты</h1>
       {project_rows()}
+    </section>
+    <section class="projects sketches">
+      <h1 class="page-title">Скетчи</h1>
+      <p class="lede">Раздел в разработке. Скоро здесь появятся рисунки.</p>
     </section>"""
     (OUT / "index.html").write_text(
         page("Иникова Полина — художник-постановщик", body, "work", ""),
