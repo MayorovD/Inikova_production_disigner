@@ -241,7 +241,7 @@ def gallery_html(rel: dict, slug: str) -> str:
     # explicit per-project layout
     if slug in CUSTOM_ROWS:
         def img_cell(n):
-            return f'<div class="cell"><img src="{existing(n)}" alt="{esc(n)}"></div>'
+            return f'<a class="cell"><img src="{existing(n)}" alt="{esc(n)}"></a>'
 
         def col_html(names, side):
             if not names:
@@ -300,7 +300,7 @@ def gallery_html(rel: dict, slug: str) -> str:
             return ""
         items = sorted(items, key=lambda x: x["seq"] if orient == "stack" else x["rank"])
         cells = "".join(
-            f'<div class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></div>'
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></a>'
             for i in items
         )
         return f'<div class="col">{cells}</div>'
@@ -310,7 +310,7 @@ def gallery_html(rel: dict, slug: str) -> str:
         left = col_html(bucket["l"], "stack")
         right = col_html(bucket["r"], "stack")
         main_cells = "".join(
-            f'<div class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></div>'
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></a>'
             for i in main
         )
         main_zone = f'<div class="main-zone">{main_cells}</div>' if main_cells else ""
