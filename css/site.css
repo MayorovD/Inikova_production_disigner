@@ -214,6 +214,10 @@ table.credits th {
   width: min(24vw, 280px);
 }
 
+.row .col:empty {
+  display: none;
+}
+
 .row .main-zone {
   display: flex;
   flex-wrap: wrap;
@@ -247,14 +251,6 @@ table.credits th {
 .row .col img {
   max-height: 34vh;
   aspect-ratio: auto;
-}
-
-.row .cap {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 11px;
-  letter-spacing: 0.04em;
 }
 
 .hero {

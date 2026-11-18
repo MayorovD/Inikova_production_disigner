@@ -251,7 +251,7 @@ def gallery_html(rel: dict) -> str:
             return ""
         items = sorted(items, key=lambda x: x["seq"] if orient == "stack" else x["rank"])
         cells = "".join(
-            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"><span class="cap">{i["cap"]}</span></a>'
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></a>'
             for i in items
         )
         return f'<div class="col">{cells}</div>'
@@ -261,7 +261,7 @@ def gallery_html(rel: dict) -> str:
         left = col_html(bucket["l"], "stack")
         right = col_html(bucket["r"], "stack")
         main_cells = "".join(
-            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"><span class="cap">{i["cap"]}</span></a>'
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"></a>'
             for i in main
         )
         main_zone = f'<div class="main-zone">{main_cells}</div>' if main_cells else ""
