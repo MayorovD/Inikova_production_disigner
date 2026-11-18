@@ -218,6 +218,10 @@ table.credits th {
   min-width: 0;
 }
 
+.row .col .cell {
+  flex: 0 0 auto;
+}
+
 .row .cell {
   display: block;
   color: inherit;
