@@ -193,7 +193,6 @@ def write_project(rel: dict) -> None:
     def rel_img(src: str) -> str:
         return rel_from("projects", src)
 
-    poster_src = rel_img(poster_for(rel))
     gallery = gallery_html(rel)
 
     credits = (
@@ -207,7 +206,6 @@ def write_project(rel: dict) -> None:
     <h1 class="page-title">{esc(title)}</h1>
     <p class="lede">{esc(summary)}</p>
     <table class="credits">{credits}</table>
-    <figure class="hero"><img src="{poster_src}" alt="{esc(title)}"></figure>
     {gallery}"""
     path = PROJECTS_DIR / f"{slug}.html"
     path.write_text(
@@ -218,28 +216,61 @@ def write_project(rel: dict) -> None:
 
 def gallery_html(rel: dict) -> str:
     tag = rel["tag"]
-    cells = []
+    # parse assets by row number
+    import re
+    row_re = re.compile(r"^(\d+)(?:_(\d+))?(?:_([rl])(\d+))?$")
+    rows: dict[int, dict] = {}
+
     for a in rel["assets"]:
         name = a["name"].lower()
+        if name.startswith("default") or name.endswith(".pdf"):
+            continue
+        stem = name[:-4] if name.endswith(".jpg") else name.replace(".", "")
+        m = row_re.match(stem)
+        if not m:
+            continue
+        row_num = int(m.group(1))
+        pos = m.group(2)
+        side = m.group(3)
+        seq = m.group(4)
+        bucket = rows.setdefault(
+            row_num, {"main": [], "l": [], "r": []}
+        )
         src = f"../portfolio/{tag}/{a['name']}"
-        if name.startswith("default"):
-            continue
-        if name.endswith(".pdf"):
-            continue
-        cap = esc(a["name"])
-        cells.append(f'<td><img src="{src}" alt="{cap}"><span class="cap">{cap}</span></td>')
-    if not cells:
+        if side:
+            bucket[side].append({"seq": int(seq), "src": src, "cap": esc(a["name"])})
+        else:
+            rank = 0 if pos is None else int(pos)
+            bucket["main"].append({"rank": rank, "src": src, "cap": esc(a["name"])})
+
+    if not rows:
         return ""
 
-    def chunks(items, n):
-        for i in range(0, len(items), n):
-            yield items[i : i + n]
+    def col_html(items, orient):
+        if not items:
+            return ""
+        items = sorted(items, key=lambda x: x["seq"] if orient == "stack" else x["rank"])
+        cells = "".join(
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"><span class="cap">{i["cap"]}</span></a>'
+            for i in items
+        )
+        return f'<div class="col">{cells}</div>'
 
-    rows = []
-    for group in chunks(cells, 2):
-        tds = "".join(cell or "<td></td>" for cell in group)
-        rows.append(f"<tr>{tds}</tr>")
-    return '<table class="gallery">\n' + "\n".join(rows) + "\n      </table>"
+    def row_html(row_num, bucket):
+        main = sorted(bucket["main"], key=lambda x: x["rank"])
+        left = col_html(bucket["l"], "stack")
+        right = col_html(bucket["r"], "stack")
+        main_cells = "".join(
+            f'<a class="cell"><img src="{i["src"]}" alt="{i["cap"]}"><span class="cap">{i["cap"]}</span></a>'
+            for i in main
+        )
+        main_zone = f'<div class="main-zone">{main_cells}</div>' if main_cells else ""
+        parts = [left, main_zone, right]
+        body = "".join(p for p in parts if p)
+        return f'<div class="row" data-row="{row_num}">{body}</div>'
+
+    rows_html = "\n".join(row_html(n, rows[n]) for n in sorted(rows))
+    return f'<div class="rows">\n{rows_html}\n      </div>'
 
 
 def main() -> None:

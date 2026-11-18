@@ -188,29 +188,73 @@ table.credits th {
   font-size: 16px;
 }
 
-table.gallery {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 14px 18px;
-  margin: 0 0 40px;
+.rows {
+  margin: 16px 0 40px;
 }
 
-table.gallery td {
-  width: 50%;
-  vertical-align: top;
+.row {
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
 }
 
-table.gallery img,
-table.gallery video {
+.row:last-child {
+  border-bottom: none;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: min(24vw, 280px);
+}
+
+.row .main-zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.row .cell {
+  display: block;
+  color: inherit;
+  flex: 1 1 auto;
+  min-width: 0;
+  cursor: zoom-in;
+}
+
+.row .cell:hover {
+  color: inherit;
+}
+
+.row img {
   width: 100%;
+  object-fit: cover;
   background: #e4d8c8;
 }
 
-table.gallery .cap {
+.row .main-zone img {
+  max-height: 72vh;
+}
+
+.row .col img {
+  max-height: 34vh;
+  aspect-ratio: auto;
+}
+
+.row .cap {
   display: block;
-  margin-top: 8px;
+  margin-top: 6px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
 }
 
 .hero {
@@ -309,15 +353,18 @@ footer.site .wrap {
     margin: 12px 18px 0 0;
   }
 
-  table.gallery {
-    display: block;
+  .row {
+    flex-direction: column;
   }
 
-  table.gallery tbody,
-  table.gallery tr,
-  table.gallery td {
-    display: block;
+  .row .col {
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .row .col img {
+    max-height: 60vh;
   }
 
   .about-grid {

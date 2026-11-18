@@ -1,7 +1,7 @@
 document.addEventListener("click", (event) => {
   const target = event.target;
   if (!(target instanceof HTMLImageElement)) return;
-  if (!target.closest(".gallery, .hero")) return;
+  if (!target.closest(".cell")) return;
 
   let box = document.getElementById("lightbox");
   if (!box) {
