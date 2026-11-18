@@ -260,17 +260,18 @@ table.credits th {
 }
 
 .main-zone[data-fit="hw"] {
-  align-items: stretch;
+  justify-content: center;
 }
 
 .main-zone[data-fit="hw"] .cell {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 auto;
 }
 
 .main-zone[data-fit="hw"] .cell img {
   max-height: none;
-  height: 100%;
+  height: 44vh;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
