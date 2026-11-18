@@ -53,7 +53,7 @@ header.site {
 }
 
 .brand {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Palatino Linotype", serif;
   font-size: 64px;
   letter-spacing: 0.04em;
   line-height: 1.05;
@@ -64,7 +64,7 @@ header.site {
 .brand small {
   display: block;
   margin-top: 10px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, "Palatino Linotype", serif;
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
