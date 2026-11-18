@@ -6,27 +6,27 @@
     "published": "2026-11-14T13:34:00Z",
     "assets": [
       {
-        "name": "1_1.jpg",
+        "name": "1.jpg",
         "size": 5270351
       },
       {
-        "name": "1_2.jpg",
+        "name": "2.jpg",
         "size": 5698919
       },
       {
-        "name": "2_1.jpg",
+        "name": "3.jpg",
         "size": 5422982
       },
       {
-        "name": "2_2.jpg",
+        "name": "4.jpg",
         "size": 5241913
       },
       {
-        "name": "3_1.jpg",
+        "name": "5.jpg",
         "size": 4329804
       },
       {
-        "name": "3_2.jpg",
+        "name": "6.jpg",
         "size": 5737127
       },
       {
@@ -91,39 +91,39 @@
     "assets": [
       {
         "name": "1.jpg",
-        "size": 5268687
+        "size": 4548172
       },
       {
         "name": "2_1.jpg",
-        "size": 6383465
+        "size": 1481103
       },
       {
         "name": "2_2.jpg",
-        "size": 1961854
+        "size": 1231306
       },
       {
         "name": "2_3.jpg",
-        "size": 2055867
+        "size": 1482423
       },
       {
         "name": "3.jpg",
-        "size": 2815025
+        "size": 2626456
       },
       {
         "name": "4_1.jpg",
-        "size": 9891296
+        "size": 2352746
       },
       {
         "name": "4_2.jpg",
-        "size": 10786567
+        "size": 2857404
       },
       {
         "name": "4_3.jpg",
-        "size": 10545086
+        "size": 2305376
       },
       {
         "name": "default.jpg",
-        "size": 4597582
+        "size": 3934060
       }
     ]
   },
@@ -135,7 +135,7 @@
     "assets": [
       {
         "name": "1.jpg",
-        "size": 9708813
+        "size": 5173767
       },
       {
         "name": "2.jpg",
@@ -259,31 +259,31 @@
     "assets": [
       {
         "name": "1.jpg",
-        "size": 5636725
+        "size": 3537000
       },
       {
         "name": "2.jpg",
-        "size": 5361023
+        "size": 2948465
       },
       {
         "name": "3.jpg",
-        "size": 3209125
+        "size": 2076470
       },
       {
         "name": "4.jpg",
-        "size": 4608656
+        "size": 2551348
       },
       {
         "name": "5.jpg",
-        "size": 3892189
+        "size": 2368022
       },
       {
         "name": "6.jpg",
-        "size": 3047806
+        "size": 2660889
       },
       {
         "name": "default.jpg",
-        "size": 5636725
+        "size": 3537000
       }
     ]
   },
