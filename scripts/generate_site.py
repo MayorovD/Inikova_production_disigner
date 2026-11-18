@@ -108,6 +108,10 @@ def poster_for(release: dict) -> str | None:
     for a in release["assets"]:
         if a["name"].lower().startswith("default"):
             return f"portfolio/{release['tag']}/{a['name']}"
+    # fall back to first non-pdf image if no default cover exists
+    for a in release["assets"]:
+        if not a["name"].lower().endswith(".pdf"):
+            return f"portfolio/{release['tag']}/{a['name']}"
     return None
 
 
