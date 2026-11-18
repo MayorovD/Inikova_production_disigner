@@ -43,6 +43,14 @@ CUSTOM_ROWS = {
         ["8_1.jpg", "8_2.jpg"],
         ["9_1.jpg", "9_2.jpg"],
     ],
+    "garden-of-the-future": [
+        ["1.jpg"],
+        ["2.jpg"],
+        ["3.jpg"],
+        ["4_1.jpg", "4_2.jpg"],
+        ["5.jpg"],
+        ["6_1.jpg", "6_2.jpg", "6_3.jpg"],
+    ],
 }
 
 
