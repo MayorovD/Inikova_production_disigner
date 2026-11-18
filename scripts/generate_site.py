@@ -128,14 +128,14 @@ def poster_for(release: dict) -> str:
 
 def ordered():  # curated display order
     order = [
+        "The-Birds",
+        "Reineke-Fuchs",
+        "The-Ladies-Delight",
+        "Eden",
         "Carpet",
         "The-Garden-of-the-Future",
-        "Spark-of-Life",
-        "Eden",
-        "Reineke-Fuchs",
         "Le-Prince-des-Aigues-Marines",
-        "The-Ladies-Delight",
-        "The-Birds",
+        "Spark-of-Life",
     ]
     by_tag = {r["tag"]: r for r in MANIFEST}
     return [by_tag[t] for t in order if t in by_tag]
