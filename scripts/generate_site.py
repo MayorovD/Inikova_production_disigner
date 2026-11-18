@@ -88,7 +88,7 @@ def footer(prefix: str) -> str:
     return f"""<footer class="site">
     <div class="wrap">
       <span>© Полина Иникова, 2026. Все права защищены.</span>
-      <a href="mailto:hello@inikova.works">hello@inikova.works</a>
+<a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a>
     </div>
   </footer>
   <script src="{prefix}js/site.js"></script>"""
@@ -182,8 +182,8 @@ def write_about() -> None:
         <p>Открыта к интересным проектам.</p>
         <div class="about-contact">
           <h2>Контакты</h2>
-          <p><a href="mailto:hello@inikova.works">hello@inikova.works</a></p>
-          <p>Телеграм: <a href="https://t.me/inikova" rel="noopener">@inikova</a></p>
+          <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
+          <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
         </div>
       </div>
     </div>"""
