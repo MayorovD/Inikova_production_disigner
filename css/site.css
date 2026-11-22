@@ -299,6 +299,20 @@ table.credits th {
   object-fit: contain;
 }
 
+.sketches-gal .row[data-row="2"] .main-zone {
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.sketches-gal .row[data-row="2"] .main-zone .cell {
+  flex: 0 1 auto;
+}
+
+.sketches-gal .row[data-row="2"] .main-zone .cell img {
+  height: clamp(160px, 44cqw, 540px);
+  max-width: 100%;
+}
+
 .row .col img {
   max-height: 34vh;
   aspect-ratio: auto;
