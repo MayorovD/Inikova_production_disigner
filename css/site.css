@@ -375,7 +375,7 @@ table.credits th {
 }
 
 .sketches-gal .row[data-row="9"] .main-zone .cell img {
-  height: clamp(160px, 54cqw, 560px);
+  height: 37cqw;
   max-width: 100%;
 }
 
