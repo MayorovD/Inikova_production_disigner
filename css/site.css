@@ -276,8 +276,8 @@ table.credits th {
 }
 
 .sketches-gal .main-zone {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   width: 100%;
   min-width: 0;
@@ -285,13 +285,14 @@ table.credits th {
 
 .sketches-gal .main-zone .cell {
   display: block;
-  width: 100%;
+  flex: 0 0 auto;
 }
 
 .sketches-gal .main-zone .cell img {
-  width: 100%;
-  height: auto;
-  max-height: 72vh;
+  width: auto;
+  height: 38vh;
+  max-width: 100%;
+  max-height: none;
   object-fit: contain;
 }
 
