@@ -22,6 +22,6 @@ print("missing", len(missing))
 for item in missing[:15]:
     print(" ", item)
 
-for path in ["/", "/about.html", "/contact.html", "/projects/carpet.html", "/css/site.css", "/portfolio/carpet/poster.jpg"]:
+for path in ["/", "/about.html", "/contact.html", "/projects/carpet.html", "/css/site.css", "/portfolio_webp/carpet/1.webp"]:
     with urllib.request.urlopen("http://127.0.0.1:8765" + path, timeout=10) as response:
         print(path, response.status, response.headers.get("content-type"), "len", response.headers.get("content-length"))
