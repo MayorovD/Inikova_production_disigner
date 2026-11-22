@@ -438,6 +438,16 @@ table.credits th {
   text-align: justify;
 }
 
+.software-list {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.software-list li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .about-contact {
   margin-top: 24px;
   padding-top: 18px;
