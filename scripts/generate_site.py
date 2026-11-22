@@ -328,10 +328,10 @@ def gallery_html(rel: dict, slug: str, prefix: str = "") -> str:
 
 def write_sketches() -> None:
     rel = sketches_rel()
+    lede = f'<p class="lede">{esc(rel["description"])}</p>\n    ' if rel.get("description") else ""
     body = f"""<a class="back" href="../index.html">← К проектам</a>
     <h1 class="page-title">Скетчи</h1>
-    <p class="lede">{esc(rel["description"])}</p>
-    <div class="sketches-gal">
+    {lede}<div class="sketches-gal">
       {gallery_html(rel, "sketches")}
     </div>"""
     (OUT / "sketches.html").write_text(
