@@ -313,6 +313,27 @@ table.credits th {
   max-width: 100%;
 }
 
+.sketches-gal .row[data-row="3"] .main-zone,
+.sketches-gal .row[data-row="4"] .main-zone {
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.sketches-gal .row[data-row="3"] .main-zone .cell,
+.sketches-gal .row[data-row="4"] .main-zone .cell {
+  flex: 0 1 auto;
+}
+
+.sketches-gal .row[data-row="3"] .main-zone .cell img {
+  height: clamp(150px, 41cqw, 500px);
+  max-width: 100%;
+}
+
+.sketches-gal .row[data-row="4"] .main-zone .cell img {
+  height: clamp(150px, 50cqw, 540px);
+  max-width: 100%;
+}
+
 .row .col img {
   max-height: 34vh;
   aspect-ratio: auto;
