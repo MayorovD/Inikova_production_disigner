@@ -86,6 +86,7 @@ def header(active: str, prefix: str) -> str:
       </a>
       <nav>
         {link("index.html", "Проекты", "work")}
+        {link("sketches.html", "Скетчи", "sketches")}
         {link("about.html", "Обо мне", "about")}
       </nav>
     </header>"""
@@ -164,6 +165,13 @@ def project_rows() -> str:
     return "\n".join(out)
 
 
+def sketches_rel() -> dict:
+    for r in MANIFEST:
+        if r["tag"] == "Sketches":
+            return r
+    raise RuntimeError("Sketches release not present in manifest")
+
+
 def write_index() -> None:
     body = f"""<section class="projects">
       <h1 class="page-title">Проекты</h1>
@@ -171,7 +179,7 @@ def write_index() -> None:
     </section>
     <section class="projects sketches">
       <h1 class="page-title">Скетчи</h1>
-      <p class="lede">Раздел в разработке. Скоро здесь появятся рисунки.</p>
+      {gallery_html(sketches_rel(), "sketches")}
     </section>"""
     (OUT / "index.html").write_text(
         page("Иникова Полина — художник-постановщик", body, "work", ""),
@@ -214,7 +222,7 @@ def write_project(rel: dict) -> None:
     def rel_img(src: str) -> str:
         return rel_from("projects", src)
 
-    gallery = gallery_html(rel, slug)
+    gallery = gallery_html(rel, slug, "../")
 
     body = f"""<a class="back" href="../index.html">← Назад к проектам</a>
     <h1 class="page-title">{esc(title)}</h1>
@@ -227,11 +235,11 @@ def write_project(rel: dict) -> None:
     )
 
 
-def gallery_html(rel: dict, slug: str) -> str:
+def gallery_html(rel: dict, slug: str, prefix: str = "") -> str:
     tag = rel["tag"]
 
     def existing(argv):
-        return f'../portfolio/{tag}/{argv}'
+        return f'{prefix}portfolio/{tag}/{argv}'
 
     # explicit per-project layout
     if slug in CUSTOM_ROWS:
@@ -285,7 +293,7 @@ def gallery_html(rel: dict, slug: str) -> str:
         bucket = rows.setdefault(
             row_num, {"main": [], "l": [], "r": []}
         )
-        src = f"../portfolio/{tag}/{a['name']}"
+        src = f"{prefix}portfolio/{tag}/{a['name']}"
         if side:
             bucket[side].append({"seq": int(seq), "src": src, "cap": esc(a["name"])})
         else:
@@ -322,13 +330,26 @@ def gallery_html(rel: dict, slug: str) -> str:
     return f'<div class="rows">\n{rows_html}\n      </div>'
 
 
+def write_sketches() -> None:
+    rel = sketches_rel()
+    body = f"""<a class="back" href="../index.html">← К проектам</a>
+    <h1 class="page-title">Скетчи</h1>
+    <p class="lede">{esc(rel["description"])}</p>
+    {gallery_html(rel, "sketches")}"""
+    (OUT / "sketches.html").write_text(
+        page("Скетчи — Иникова Полина", body, "sketches", ""),
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     PROJECTS_DIR.mkdir(exist_ok=True)
     write_index()
     write_about()
+    write_sketches()
     for rel in MANIFEST:
         write_project(rel)
-    print(f"wrote index, about, and {len(MANIFEST)} project pages")
+    print(f"wrote index, about, sketches, and {len(MANIFEST)} project pages")
 
 
 if __name__ == "__main__":
