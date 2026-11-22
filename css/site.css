@@ -290,7 +290,7 @@ table.credits th {
 
 .sketches-gal .main-zone .cell img {
   width: auto;
-  height: 38vh;
+  height: clamp(150px, 26vw, 340px);
   max-width: 100%;
   max-height: none;
   object-fit: contain;
