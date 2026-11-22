@@ -451,6 +451,10 @@ table.credits th {
   text-align: justify;
 }
 
+.about-text p:last-child {
+  margin-top: calc(2 * 1.55em);
+}
+
 .software-list {
   margin: 0 0 14px;
   padding-left: 20px;
