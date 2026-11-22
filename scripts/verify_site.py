@@ -10,7 +10,7 @@ missing = []
 counts = {}
 for page in pages:
     html = page.read_text(encoding="utf-8")
-    srcs = re.findall(r'(?:src|href)="(?:\.\./)?(portfolio/[^"]+)"', html)
+    srcs = re.findall(r'(?:src|href)="(?:\.\./)?(portfolio_webp/[^"]+)"', html)
     for rel in srcs:
         if not (ROOT / rel).exists():
             missing.append((page.name, rel))

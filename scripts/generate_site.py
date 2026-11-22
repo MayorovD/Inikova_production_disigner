@@ -122,16 +122,23 @@ def page(title: str, body: str, active: str, prefix: str) -> str:
 """
 
 
+def webp_name(name: str) -> str:
+    if name.lower().endswith(".webp"):
+        return name
+    stem = name[: name.rfind(".")]
+    return f"{stem}.webp"
+
+
 def poster_for(release: dict) -> str:
     tag = release["tag"]
     for a in release["assets"]:
         if a["name"].lower().startswith("default"):
-            return f"portfolio/{tag}/{a['name']}"
+            return f"portfolio_webp/{tag}/{webp_name(a['name'])}"
     # fall back to first non-pdf image if no default cover exists
     for a in release["assets"]:
         if not a["name"].lower().endswith(".pdf"):
-            return f"portfolio/{tag}/{a['name']}"
-    return f"portfolio/{tag}/1.jpg"
+            return f"portfolio_webp/{tag}/{webp_name(a['name'])}"
+    return f"portfolio_webp/{tag}/1.webp"
 
 
 def ordered():  # curated display order
@@ -235,7 +242,7 @@ def gallery_html(rel: dict, slug: str, prefix: str = "") -> str:
     tag = rel["tag"]
 
     def existing(argv):
-        return f'{prefix}portfolio/{tag}/{argv}'
+        return f'{prefix}portfolio_webp/{tag}/{webp_name(argv)}'
 
     # explicit per-project layout
     if slug in CUSTOM_ROWS:
@@ -289,7 +296,7 @@ def gallery_html(rel: dict, slug: str, prefix: str = "") -> str:
         bucket = rows.setdefault(
             row_num, {"main": [], "l": [], "r": []}
         )
-        src = f"{prefix}portfolio/{tag}/{a['name']}"
+        src = f"{prefix}portfolio_webp/{tag}/{webp_name(a['name'])}"
         if side:
             bucket[side].append({"seq": int(seq), "src": src, "cap": esc(a["name"])})
         else:
