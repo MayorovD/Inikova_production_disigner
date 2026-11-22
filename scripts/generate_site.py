@@ -331,7 +331,9 @@ def write_sketches() -> None:
     body = f"""<a class="back" href="../index.html">← К проектам</a>
     <h1 class="page-title">Скетчи</h1>
     <p class="lede">{esc(rel["description"])}</p>
-    {gallery_html(rel, "sketches")}"""
+    <div class="sketches-gal">
+      {gallery_html(rel, "sketches")}
+    </div>"""
     (OUT / "sketches.html").write_text(
         page("Скетчи — Иникова Полина", body, "sketches", ""),
         encoding="utf-8",
