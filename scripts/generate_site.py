@@ -203,7 +203,7 @@ def write_index() -> None:
 def write_about() -> None:
     body = """<div class="about-grid">
       <div class="about-photo">
-        <img src="images/about.jpg" alt="Портрет Полины">
+        <img src="images/about.webp" alt="Портрет Полины">
       </div>
       <div class="about-text">
         <h1>Обо мне</h1>
