@@ -275,21 +275,23 @@ table.credits th {
   object-fit: contain;
 }
 
-.sketches-gal .row {
-  flex-wrap: wrap;
+.sketches-gal .main-zone {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
 }
 
 .sketches-gal .main-zone .cell {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .sketches-gal .main-zone .cell img {
-  width: auto;
-  max-width: 100%;
-  max-height: 72vh;
+  width: 100%;
   height: auto;
+  max-height: 72vh;
   object-fit: contain;
 }
 
