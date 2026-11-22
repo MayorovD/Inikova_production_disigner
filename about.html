@@ -3,37 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Обо мне — Иникова Полина</title>
+  <title data-i18n-title="title.about">Обо мне — Иникова Полина</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <div class="wrap">
     <header class="site">
-      <a class="brand" href="index.html">Иникова Полина
-        <small>2D-художник</small>
+      <a class="brand" href="index.html"><span data-i18n="brand.name">Иникова Полина</span>
+        <small data-i18n="brand.subtitle">2D-художник</small>
       </a>
-      <nav>
-        <a href="index.html">Проекты</a>
-        <a href="sketches.html">Скетчи</a>
-        <a href="about.html" aria-current="page">Обо мне</a>
-      </nav>
+      <div class="head-right">
+        <nav>
+          <a href="index.html"><span data-i18n="nav.projects">Проекты</span></a>
+          <a href="sketches.html"><span data-i18n="nav.sketches">Скетчи</span></a>
+          <a href="about.html" aria-current="page"><span data-i18n="nav.about">Обо мне</span></a>
+        </nav>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="Switch language">
+          РУ | EN
+        </button>
+      </div>
     </header>
     <div class="about-grid">
       <div class="about-photo">
         <img src="images/about.webp" alt="Портрет Полины">
         <div class="about-contact">
-          <h2>Контакты</h2>
+          <h2 data-i18n="about.contact.h2">Контакты</h2>
           <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
           <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
           <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">«Иней на поляне»</a></p>
         </div>
       </div>
       <div class="about-text">
-        <h1>Обо мне</h1>
-        <p>Меня зовут Полина, я 2D-художник и аниматор. Люблю создавать разнообразные миры — от фонов и пропсов до персонажей и раскадровок — и работать в разных стилях, находя для каждого проекта свой визуальный язык.</p>
-        <p>В 2026 году я завершила работу над анимационным короткометражным фильмом «Ковёр» на Свердловской киностудии, где выступила и в качестве режиссёра, и художника-постановщика. Также работала художником по фонам над другими короткометражными фильмами.</p>
-        <p>В 2022 году получила среднее специальное образование в колледже ВГИК. Сейчас завершаю обучение в университете ВГИК по специальности «художник анимации и компьютерной графики».</p>
-        <p>Владею следующим программным обеспечением:</p>
+        <h1 data-i18n="about.h1">Обо мне</h1>
+        <p data-i18n="about.p1">Меня зовут Полина, я 2D-художник и аниматор. Люблю создавать разнообразные миры — от фонов и пропсов до персонажей и раскадровок — и работать в разных стилях, находя для каждого проекта свой визуальный язык.</p>
+        <p data-i18n="about.p2">В 2026 году я завершила работу над анимационным короткометражным фильмом «Ковёр» на Свердловской киностудии, где выступила и в качестве режиссёра, и художника-постановщика. Также работала художником по фонам над другими короткометражными фильмами.</p>
+        <p data-i18n="about.p3">В 2022 году получила среднее специальное образование в колледже ВГИК. Сейчас завершаю обучение в университете ВГИК по специальности «художник анимации и компьютерной графики».</p>
+        <p data-i18n="about.software.intro">Владею следующим программным обеспечением:</p>
         <ul class="software-list">
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
@@ -42,16 +47,18 @@
           <li>Blender 3D</li>
           <li>Toon Boom Harmony</li>
         </ul>
-        <p>Открыта к интересным проектам.</p>
+        <p data-i18n="about.open">Открыта к интересным проектам.</p>
       </div>
     </div>
   </div>
   <footer class="site">
     <div class="wrap">
-      <span>© Полина Иникова, 2026. Все права защищены.</span>
+      <span data-i18n="footer.rights">© Полина Иникова, 2026. Все права защищены.</span>
 <a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a>
     </div>
   </footer>
+  <script src="js/site.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/site.js"></script>
 </body>
 </html>

@@ -94,6 +94,30 @@ nav a[aria-current="page"] {
   color: var(--accent);
 }
 
+.head-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.lang-btn {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--ink);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .intro {
   max-width: 640px;
   padding: 36px 0 8px;
@@ -540,6 +564,15 @@ footer.site .wrap {
 
   nav a {
     margin: 12px 18px 0 0;
+  }
+
+  .head-right {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .lang-btn {
+    margin-top: 12px;
   }
 
   .row {

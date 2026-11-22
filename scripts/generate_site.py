@@ -91,34 +91,39 @@ def header(active: str, prefix: str) -> str:
         return f'<a href="{prefix}{href}"{current}>{label}</a>'
 
     return f"""<header class="site">
-      <a class="brand" href="{prefix}index.html">Иникова Полина
-        <small>2D-художник</small>
+      <a class="brand" href="{prefix}index.html"><span data-i18n="brand.name">Иникова Полина</span>
+        <small data-i18n="brand.subtitle">2D-художник</small>
       </a>
-      <nav>
-        {link("index.html", "Проекты", "work")}
-        {link("sketches.html", "Скетчи", "sketches")}
-        {link("about.html", "Обо мне", "about")}
-      </nav>
+      <div class="head-right">
+        <nav>
+          {link("index.html", '<span data-i18n="nav.projects">Проекты</span>', "work")}
+          {link("sketches.html", '<span data-i18n="nav.sketches">Скетчи</span>', "sketches")}
+          {link("about.html", '<span data-i18n="nav.about">Обо мне</span>', "about")}
+        </nav>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="Switch language">
+          РУ | EN
+        </button>
+      </div>
     </header>"""
 
 
 def footer(prefix: str) -> str:
     return f"""<footer class="site">
     <div class="wrap">
-      <span>© Полина Иникова, 2026. Все права защищены.</span>
+      <span data-i18n="footer.rights">© Полина Иникова, 2026. Все права защищены.</span>
 <a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a>
     </div>
   </footer>
   <script src="{prefix}js/site.js"></script>"""
 
 
-def page(title: str, body: str, active: str, prefix: str) -> str:
+def page(title: str, title_key: str, body: str, active: str, prefix: str) -> str:
     return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)}</title>
+  <title data-i18n-title="{title_key}">{esc(title)}</title>
   <link rel="stylesheet" href="{prefix}css/site.css">
 </head>
 <body>
@@ -127,6 +132,8 @@ def page(title: str, body: str, active: str, prefix: str) -> str:
     {body}
   </div>
   {footer(prefix)}
+  <script src="{prefix}js/i18n.js"></script>
+  <script src="{prefix}js/site.js"></script>
 </body>
 </html>
 """
@@ -174,9 +181,9 @@ def project_rows() -> str:
         href = f"projects/{slug}.html"
         poster = poster_for(rel)
         out.append(f"""<a class="work-item" href="{href}">
-      <img src="{poster}" alt="{esc(title)}">
+      <img src="{poster}" alt="{esc(title)}" data-i18n-alt="{slug}-title">
       <div class="work-caption">
-        <span class="work-title">{esc(title)}</span>
+        <span class="work-title" data-i18n="{slug}-title">{esc(title)}</span>
       </div>
     </a>""")
     return "\n".join(out)
@@ -191,11 +198,11 @@ def sketches_rel() -> dict:
 
 def write_index() -> None:
     body = f"""<section class="projects">
-      <h1 class="page-title">Проекты</h1>
+      <h1 class="page-title" data-i18n="projects.title">Проекты</h1>
       {project_rows()}
     </section>"""
     (OUT / "index.html").write_text(
-        page("Иникова Полина — художник-постановщик", body, "work", ""),
+        page("Иникова Полина — художник-постановщик", "title.index", body, "work", ""),
         encoding="utf-8",
     )
 
@@ -205,18 +212,18 @@ def write_about() -> None:
       <div class="about-photo">
         <img src="images/about.webp" alt="Портрет Полины">
         <div class="about-contact">
-          <h2>Контакты</h2>
+          <h2 data-i18n="about.contact.h2">Контакты</h2>
           <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
           <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
           <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">«Иней на поляне»</a></p>
         </div>
       </div>
       <div class="about-text">
-        <h1>Обо мне</h1>
-        <p>Меня зовут Полина, я 2D-художник и аниматор. Люблю создавать разнообразные миры — от фонов и пропсов до персонажей и раскадровок — и работать в разных стилях, находя для каждого проекта свой визуальный язык.</p>
-        <p>В 2026 году я завершила работу над анимационным короткометражным фильмом «Ковёр» на Свердловской киностудии, где выступила и в качестве режиссёра, и художника-постановщика. Также работала художником по фонам над другими короткометражными фильмами.</p>
-        <p>В 2022 году получила среднее специальное образование в колледже ВГИК. Сейчас завершаю обучение в университете ВГИК по специальности «художник анимации и компьютерной графики».</p>
-        <p>Владею следующим программным обеспечением:</p>
+        <h1 data-i18n="about.h1">Обо мне</h1>
+        <p data-i18n="about.p1">Меня зовут Полина, я 2D-художник и аниматор. Люблю создавать разнообразные миры — от фонов и пропсов до персонажей и раскадровок — и работать в разных стилях, находя для каждого проекта свой визуальный язык.</p>
+        <p data-i18n="about.p2">В 2026 году я завершила работу над анимационным короткометражным фильмом «Ковёр» на Свердловской киностудии, где выступила и в качестве режиссёра, и художника-постановщика. Также работала художником по фонам над другими короткометражными фильмами.</p>
+        <p data-i18n="about.p3">В 2022 году получила среднее специальное образование в колледже ВГИК. Сейчас завершаю обучение в университете ВГИК по специальности «художник анимации и компьютерной графики».</p>
+        <p data-i18n="about.software.intro">Владею следующим программным обеспечением:</p>
         <ul class="software-list">
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
@@ -225,11 +232,11 @@ def write_about() -> None:
           <li>Blender 3D</li>
           <li>Toon Boom Harmony</li>
         </ul>
-        <p>Открыта к интересным проектам.</p>
+        <p data-i18n="about.open">Открыта к интересным проектам.</p>
       </div>
     </div>"""
     (OUT / "about.html").write_text(
-        page("Обо мне — Иникова Полина", body, "about", ""),
+        page("Обо мне — Иникова Полина", "title.about", body, "about", ""),
         encoding="utf-8",
     )
 
@@ -245,13 +252,13 @@ def write_project(rel: dict) -> None:
 
     gallery = gallery_html(rel, slug, "../")
 
-    body = f"""<a class="back" href="../index.html">← Назад к проектам</a>
-    <h1 class="page-title">{esc(title)}</h1>
-    <p class="lede">{esc(rel["description"])}</p>
+    body = f"""<a class="back" href="../index.html" data-i18n="back.projects">← Назад к проектам</a>
+    <h1 class="page-title" data-i18n="{slug}-title">{esc(title)}</h1>
+    <p class="lede" data-i18n="desc.{tag}">{esc(rel["description"])}</p>
     {gallery}"""
     path = PROJECTS_DIR / f"{slug}.html"
     path.write_text(
-        page(f"{title} — Иникова Полина", body, "work", "../"),
+        page(f"{title} — Иникова Полина", f"title.{slug}", body, "work", "../"),
         encoding="utf-8",
     )
 
@@ -354,13 +361,13 @@ def gallery_html(rel: dict, slug: str, prefix: str = "") -> str:
 def write_sketches() -> None:
     rel = sketches_rel()
     lede = f'<p class="lede">{esc(rel["description"])}</p>\n    ' if rel.get("description") else ""
-    body = f"""<a class="back" href="index.html">← К проектам</a>
-    <h1 class="page-title">Скетчи</h1>
+    body = f"""<a class="back" href="index.html" data-i18n="back.projects">← К проектам</a>
+    <h1 class="page-title" data-i18n="sketches.title">Скетчи</h1>
     {lede}<div class="sketches-gal">
       {gallery_html(rel, "sketches")}
     </div>"""
     (OUT / "sketches.html").write_text(
-        page("Скетчи — Иникова Полина", body, "sketches", ""),
+        page("Скетчи — Иникова Полина", "title.sketches", body, "sketches", ""),
         encoding="utf-8",
     )
 
