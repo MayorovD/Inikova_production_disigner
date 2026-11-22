@@ -92,7 +92,7 @@ def header(active: str, prefix: str) -> str:
 
     return f"""<header class="site">
       <a class="brand" href="{prefix}index.html">Иникова Полина
-        <small>Художник-постановщик</small>
+        <small>2D-художник</small>
       </a>
       <nav>
         {link("index.html", "Проекты", "work")}
