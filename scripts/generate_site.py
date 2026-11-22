@@ -176,10 +176,6 @@ def write_index() -> None:
     body = f"""<section class="projects">
       <h1 class="page-title">Проекты</h1>
       {project_rows()}
-    </section>
-    <section class="projects sketches">
-      <h1 class="page-title">Скетчи</h1>
-      {gallery_html(sketches_rel(), "sketches")}
     </section>"""
     (OUT / "index.html").write_text(
         page("Иникова Полина — художник-постановщик", body, "work", ""),
