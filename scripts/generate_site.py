@@ -204,6 +204,12 @@ def write_about() -> None:
     body = """<div class="about-grid">
       <div class="about-photo">
         <img src="images/about.webp" alt="Портрет Полины">
+        <div class="about-contact">
+          <h2>Контакты</h2>
+          <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
+          <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
+          <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">«Иней на поляне»</a></p>
+        </div>
       </div>
       <div class="about-text">
         <h1>Обо мне</h1>
@@ -220,12 +226,6 @@ def write_about() -> None:
           <li>Toon Boom Harmony</li>
         </ul>
         <p>Открыта к интересным проектам.</p>
-        <div class="about-contact">
-          <h2>Контакты</h2>
-          <p><a href="mailto:polinainikova02@gmail.com">polinainikova02@gmail.com</a></p>
-          <p>Телеграм: <a href="https://t.me/poli_ini" rel="noopener">@poli_ini</a></p>
-          <p>ВКонтакте: <a href="https://vk.ru/club213014018" rel="noopener">«Иней на поляне»</a></p>
-        </div>
       </div>
     </div>"""
     (OUT / "about.html").write_text(

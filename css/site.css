@@ -6,6 +6,16 @@
   --accent: #b45a38;
   --white: #fbf8f2;
   --brand-color: #c86e69;
+  --font-heading: "Gnocchi", Georgia, "Palatino Linotype", serif;
+  --font-body: "Gnocchi", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Gnocchi";
+  src: url("../fonts/Gnocchi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -18,7 +28,7 @@ body {
   padding: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.45;
 }
@@ -53,7 +63,7 @@ header.site {
 }
 
 .brand {
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-size: 64px;
   letter-spacing: 0.04em;
   line-height: 1.05;
@@ -64,7 +74,7 @@ header.site {
 .brand small {
   display: block;
   margin-top: 10px;
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-size: 16px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -73,7 +83,7 @@ header.site {
 
 nav a {
   margin-left: 22px;
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-size: 16px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -127,9 +137,10 @@ nav a[aria-current="page"] {
 }
 
 .work-title {
-  font-family: Georgia, "Palatino Linotype", serif;
-  font-size: 24px;
+  font-family: var(--font-heading);
+  font-size: 30px;
   line-height: 1.2;
+  color: rgb(90, 100, 130);
 }
 
 .work-item:hover .work-title {
@@ -137,10 +148,11 @@ nav a[aria-current="page"] {
 }
 
 .page-title {
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-size: 30px;
   font-weight: normal;
   margin: 36px 0 8px;
+  color: rgb(90, 100, 130);
 }
 
 .lede {
@@ -425,10 +437,11 @@ table.credits th {
 }
 
 .about-text h1 {
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-weight: normal;
   font-size: 36px;
   margin: 0 0 16px;
+  color: rgb(90, 100, 130);
 }
 
 .about-text p {
@@ -455,14 +468,17 @@ table.credits th {
 }
 
 .about-contact h2 {
-  font-family: Georgia, "Palatino Linotype", serif;
+  font-family: var(--font-heading);
   font-weight: normal;
-  font-size: 20px;
+  font-size: 26px;
   margin: 0 0 8px;
+  color: rgb(90, 100, 130);
 }
 
 .about-contact p {
   margin: 6px 0;
+  font-size: 20px;
+  color: rgb(90, 100, 130);
 }
 
 .about-contact a {
