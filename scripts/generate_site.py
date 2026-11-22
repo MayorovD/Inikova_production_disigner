@@ -58,6 +58,12 @@ CUSTOM_ROWS = {
         ["4_1.jpg", "4_2.jpg"],
         {"main": ["5.jpg"], "l": ["5_l1.jpg", "5_l2.jpg"]},
     ],
+    "birds": [
+        ["1.jpg"],
+        ["3.jpg"],
+        ["2_1.jpg", "2_2.jpg", "2_3.jpg"],
+        ["4_1.jpg", "4_2.jpg", "4_3.jpg"],
+    ],
 }
 
 
